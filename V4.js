@@ -137,7 +137,7 @@ javascript: (function() {
 	function createMenu() {
 		var menu = document.createElement("div");
 		menu.setAttribute("style", "position:fixed;top:5px;right:5px;background-color:#000;color:#0f0 !important;padding:5px;border-radius:10px;z-index:9999;font-family:monospace !important;font-size:16px !important;width:250px;height:600px;");
-		menu.innerHTML = '<div style="text-align:right;"><button style="background-color:red !important;padding:5px !important;border-radius:5px !important;border:none;cursor:pointer;" onclick="document.body.removeChild(this.parentNode.parentNode);">X</button></div><h3 style="color:red !important;margin-top:0;">Project Ẍ - V4</h3>';
+		menu.innerHTML = '<div style="text-align:right;"><button style="background-color:red !important;padding:5px !important;border-radius:5px !important;border:none;cursor:pointer;" onclick="document.body.removeChild(this.parentNode.parentNode);">X</button></div><h3 style="color:red !important;margin-top:0;">Project ﷺ - V4</h3>';
 		var pageList = document.createElement("ul");
 		pageList.setAttribute("style", "list-style:none;padding:0;margin:0;");
 		for (var i = 0; i < pages[currentPage - 1].length; i++) {
