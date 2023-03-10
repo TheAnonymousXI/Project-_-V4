@@ -1,4 +1,15 @@
-javascript: (function() {
+/*
+ __     __   ______   ____    _____     __      _   _     _______   __    __   _____     ____       ___
+|  \   /  | |  __  | |  _ \  |   __|   |  |    | | | |   |__   __| |  |  |  | |   __|   |  _ \     / _ \
+|   \_/   | | |__| | | | \ | |  |__    |  |_   \ \_/ /      | |    |  |__|  | |  |__    | |_| |   | | |_|
+|         | |  __  | | | | | |   __|   |  _ \   \   /       | |    |   __   | |   __|   |   _/    | |  _
+|  |\_/|  | | |  | | | |_/ | |  |__    | |_| |   | |        | |    |  |  |  | |  |__    |  |    _ | |_| | _
+|__|   |__| |_|  |_| |____/  |_____|   |____/    |_|        |_|    |__|  |__| |_____|   |__|   |_| \___/ |_|
+*/
+
+javascripts:
+
+(function() {
 	var currentPage = 1;
 	var numPages = 2;
 	var pages = [
@@ -15,65 +26,41 @@ javascript: (function() {
 				url: "javascript:(function(){ var style = document.createElement(%27style%27), styleContent = document.createTextNode(%27* { cursor: url(https://l413.github.io/Cursor-Changer/icons/paint-pink.gif) 12 12, auto !important}%27); style.appendChild(styleContent ); var caput = document.getElementsByTagName(%27head%27); caput[0].appendChild(style); })();"
 			},
 			{
-				name: "Blank",
-				url: "js:Blank"
+				name: "Set Rotation to 0",
+				url: "javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){document.body.style[prefix + 'transform'] = 'rotate(0deg)';});}())"
+			},
+			{
+				name: "Set Rotation to 90",
+				url: "javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){document.body.style[prefix + 'transform'] = 'rotate(90deg)';});}())"
+			},
+			{
+				name: "Set Rotation to 180",
+				url: "javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){document.body.style[prefix + 'transform'] = 'rotate(180deg)';});}())"
+			},
+			{
+				name: "Set Rotation to 270",
+				url: "javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){document.body.style[prefix + 'transform'] = 'rotate(270deg)';});}())"
 			},
 			{
 				name: "Blank",
 				url: "js:Blank"
 			},
 			{
-				name: "Blank",
-				url: "js:Blank"
+				name: "Bookmarklet Maker",
+				url: "https://caiorss.github.io/bookmarklet-maker/"
 			},
 			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
-			},
-			{
-				name: "Blank",
-				url: "js:Blank"
+				name: "TheAnonymousXI's Website",
+				url: "https://github.com/TheAnonymousXI"
 			},
 		],
 		[{
-				name: "Others",
+				name: "Page 2",
 				url: "js:Title"
 			},
 			{
-				name: "Name",
-				url: "js:Code"
+				name: "Page Nucker",
+				url: "javascript:var KICKASSVERSION='2.0';var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);"
 			},
 			{
 				name: "Blur",
@@ -88,44 +75,20 @@ javascript: (function() {
 				url: "javascript:(function(){ var IN,F;IN=document.getElementsByTagName('input'); for(var i=0;i<IN.length;i++){F=IN[i]; if(F.type.toLowerCase()=='password'){ try{F.type='text'}catch(r){ var n,Fa;n=document.createElement('input'); Fa=F.attributes;for(var ii=0;ii<Fa.length;ii++){ var k,knn,knv;k=Fa[ii];knn=k.nodeName;knv=k.nodeValue; if(knn.toLowerCase()!='type'){ if(knn!='height'&&knn!='width'&!!knv)n[knn]=knv}}; F.parentNode.replaceChild(n,F)}}}})()"
 			},
 			{
-				name: "Bookmarklet 5",
-				url: "javascript:(function(){alert('Hello from bookmarklet 5!');})();"
+				name: "Blank",
+				url: "js:Blank"
 			},
 			{
-				name: "Bookmarklet 6",
-				url: "javascript:(function(){alert('Hello from bookmarklet 6!');})();"
+				name: "Blank",
+				url: "js:Blank"
 			},
 			{
-				name: "Bookmarklet 7",
-				url: "javascript:(function(){alert('Hello from bookmarklet 7!');})();"
+				name: "Blank",
+				url: "js:Blank"
 			},
 			{
-				name: "Bookmarklet 8",
-				url: "javascript:(function(){alert('Hello from bookmarklet 8!');})();"
-			},
-			{
-				name: "Bookmarklet 9",
-				url: "javascript:(function(){alert('Hello from bookmarklet 9!');})();"
-			},
-			{
-				name: "Bookmarklet 10",
-				url: "javascript:(function(){alert('Hello from bookmarklet 10!');})();"
-			},
-			{
-				name: "Bookmarklet 11",
-				url: "javascript:(function(){alert('Hello from bookmarklet 11!');})();"
-			},
-			{
-				name: "Bookmarklet 12",
-				url: "javascript:(function(){alert('Hello from bookmarklet 12!');})();"
-			},
-			{
-				name: "Bookmarklet 13",
-				url: "javascript:(function(){alert('Hello from bookmarklet 13!');})();"
-			},
-			{
-				name: "Bookmarklet 14",
-				url: "javascript:(function(){alert('Hello from bookmarklet 14!');})();"
+				name: "Bookmarklet Maker",
+				url: "https://caiorss.github.io/bookmarklet-maker/"
 			},
 			{
 				name: "TheAnonymousXI's Website",
