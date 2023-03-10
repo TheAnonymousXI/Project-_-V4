@@ -1,6 +1,6 @@
 # Project ﷺ-V4
 
-A Collection of bookmarks put together to make an over the tops client for all to use.
+A Collection of bookmarks put together to make an over the top client for all to use.
 
 Bookmarklet:
 #+BEGIN_SRC html
