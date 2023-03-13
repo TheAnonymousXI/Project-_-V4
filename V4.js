@@ -42,8 +42,8 @@ javascripts:
 				url: "javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){document.body.style[prefix + 'transform'] = 'rotate(270deg)';});}())"
 			},
 			{
-				name: "Blank",
-				url: "js:Blank"
+				name: "Snow",
+				url: "javascript:(t=>{function i(){this.D=function(){const t=h.atan(this.i/this.d);l.save(),l.translate(this.b,this.a),l.rotate(-t),l.scale(this.e,this.e*h.max(1,h.pow(this.j,.7)/15)),l.drawImage(m,-v/2,-v/2),l.restore()}}window;const h=Math,r=h.random,a=document,o=Date.now;e=t=>{l.clearRect(0,0,_,f),l.fill(),requestAnimationFrame(e);const i=.001*y.et;y.r();const s=L.et*g;for(var n=0;n<C.length;++n){const t=C[n];t.i=h.sin(s+t.g)*t.h,t.j=h.sqrt(t.i*t.i+t.f),t.a+=t.d*i,t.b+=t.i*i,t.a>w&&(t.a=-u),t.b>b&&(t.b=-u),t.b<-u&&(t.b=b),t.D()}},s=t=>{for(var e=0;e<p;++e)C[e].a=r()*(f+u),C[e].b=r()*_},n=t=>{c.width=_=innerWidth,c.height=f=innerHeight,w=f+u,b=_+u,s()};class d{constructor(t,e=!0){this._ts=o(),this._p=!0,this._pa=o(),this.d=t,e&&this.s()}get et(){return this.ip?this._pa-this._ts:o()-this._ts}get%20rt(){return%20h.max(0,this.d-this.et)}get%20ip(){return%20this._p}get%20ic(){return%20this.et%3E=this.d}s(){return%20this._ts=o()-this.et,this._p=!1,this}r(){return%20this._pa=this._ts=o(),this}p(){return%20this._p=!0,this._pa=o(),this}st(){return%20this._p=!0,this}}const%20c=a.createElement(%22canvas%22);H=c.style,H.position=%22fixed%22,H.left=0,H.top=0,H.width=%22100vw%22,H.height=%22100vh%22,H.zIndex=%22100000%22,H.pointerEvents=%22none%22,a.body.insertBefore(c,a.body.children[0]);const%20l=c.getContext(%222d%22),p=300,g=5e-4,u=20;let%20_=c.width=innerWidth,f=c.height=innerHeight,w=f+u,b=_+u;const%20v=15.2,m=a.createElement(%22canvas%22),E=m.getContext(%222d%22),x=E.createRadialGradient(7.6,7.6,0,7.6,7.6,7.6);x.addColorStop(0,%22hsla(255,255%,255%,1)%22),x.addColorStop(1,%22hsla(255,255%,255%,0)%22),E.fillStyle=x,E.fillRect(0,0,v,v);let%20y=new%20d(0,!0),C=[],L=new%20d(0,!0);for(var%20j=0;j%3Cp;++j){const%20t=new%20i;t.a=r()*(f+u),t.b=r()*_,t.c=1*(3*r()+.8),t.d=.1*h.pow(t.c,2.5)*50*(2*r()+1),t.d=t.d%3C65?65:t.d,t.e=t.c/7.6,t.f=t.d*t.d,t.g=r()*h.PI/1.3,t.h=15*t.c,t.i=0,t.j=0,C.push(t)}s(),EL=a.addEventListener,EL(%22visibilitychange%22,(()=%3EsetTimeout(n,100)),!1),EL(%22resize%22,n,!1),e()})();"
 			},
 			{
 				name: "Bookmarklet Maker",
@@ -59,7 +59,7 @@ javascripts:
 				url: "js:Title"
 			},
 			{
-				name: "Page Nuker",
+				name: "Page Nucker",
 				url: "javascript:var KICKASSVERSION='2.0';var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);"
 			},
 			{
